@@ -4,6 +4,10 @@
 - type: github
   icon: "fab fa-github"
 
+- type: mastodon
+  icon: "fab fa-mastodon"
+  url: "https://mastodon.social/@chanster"
+
 # - type: twitter
 #   icon: "fab fa-twitter"
 
@@ -16,9 +20,6 @@
   noblank: true
 # Uncomment and complete the url below to enable more contact options
 #
-- type: mastodon
-  icon: "fab fa-mastodon"
-  url: "https://mastodon.social/@chanster"
 #
 # - type: linkedin
 #   icon: 'fab fa-linkedin'   # icons powered by <https://fontawesome.com/>
