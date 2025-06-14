@@ -1,0 +1,54 @@
+site_name: chanster.net
+site_url: https://chanster.net
+repo_url: https://github.com/chanster/chanster.github.io
+edit_uri: https://github.com/chanster/chanster.github.io/blob/main/chanster.github.io
+docs_dir: src
+copyright: chanster &copy; 2025
+
+not_in_nav: /index.md
+
+theme:
+  name: material
+  logo: assets/static/avatar-inverted.png
+  favicon: assets/static/favicon.ico
+  palette:
+    - media: "{prefered-color-scheme: dark}"
+      scheme: slate
+      primary: black
+      accent: red
+  features:
+    # content
+    - context.tabs.link
+    - content.footnote.tooltips
+    - content.code.copy
+    # searching
+    - search.highlight
+    - search.share
+    - seach.suggest
+    # toc
+    - toc.permalink
+    - toc.follow
+    # nav
+    - navigation.tabs
+    - navigation.tabs.sticky
+
+plugins:
+  - search
+  - tags
+  - glightbox
+  - redirects:
+      redirect_maps:
+        'index.md': blog/index.md
+  - blog:
+      blog_dir: blog
+      blog_toc: true
+      index: 'Back to Posts'
+      post_excerpt_separator: <!-- more -->
+      post_date_format: Y-MM-dd
+      post_url_format: '{date}/{slug}'
+      archive: false
+
+markdown_extensions:
+  # python-markdown
+  - markdown.extensions.abbr
+  - markdown.extensions.md_in_html
